@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import ProductScreen from './Components/ProductScreen'
 import MarketingService from './Components/MarketingService'
+import SubMarketingService from './SubComponent.jsx/SubMarketingService'
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Routes>
       <Route path='/ProductScreen' element={<ProductScreen/>}></Route>
       <Route path='/marketingService' element={<MarketingService/>}></Route>
+      <Route path='/sub' element={<SubMarketingService/>}></Route>
     </Routes>
     </BrowserRouter>
   )

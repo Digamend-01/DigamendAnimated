@@ -1,6 +1,17 @@
 import "../index.css"
-// import { useEffect } from "react";
+import image from '../assets/Frame 1321315476 1.svg'
+import { useEffect } from "react";
 function MarketingService() {
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://codepen.io/bramus/pen/ZEqMOLz/cccfe67c2b9cdfbeb5fb59083dbd0a64.js';
+        script.async = true;
+        document.body.appendChild(script);
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
 
     // useEffect(() => {
     //     const handleScroll = () => {
@@ -38,6 +49,10 @@ function MarketingService() {
         <div className="font-glimmer-of-light font-normal text-[24px] lg:text-[48px] leading-[1.2] lg:leading-[100px] text-center text-custom-blue">Extraordinary Digital <br /> Experience Unleashed</div>
       </div>
 
+
+
+
+
       <div>
         <div className="video-container">
             <video className="video" src="/src/assets/DigAmenD full service 2.mp4" controls></video>
@@ -56,17 +71,162 @@ function MarketingService() {
  
 </div>
 
-      <div>Content4-Component</div>
+
+{/* card1 */}
+
+      <ul id="cards">
+        {/* card11 */}
+        <li className="card" id="card_1">
+        <div className="card__content w-[1366px] h-[567px]">
+      <div className="relative w-[1140px] h-[450px] top-[59px] left-[113px] rounded-[66px] bg-[#6C85C3] flex justify-center items-center">
+      <div className=" w-[478px] h-[374px] top-[-7px] left-[-3px]">
+        <img src={image} alt="SVG Image" className="w-full h-full rounded-[40px]" />
+      </div>
+
+      <div className=" flex flex-col justify-center items-center w-[535px] h-[280px] top-[85px] left-[560px] gap-[24px] ml-5">
+        <div className="flex justify-center items-center w-full h-[46px] font-jost font-medium text-[30px] leading-[34.68px] text-white">
+          Corllel
+        </div>
+        <div className="flex justify-center items-center text-center w-full h-[210px] font-jost text-[24px] leading-[34.68px] p-4 text-white ">
+          Corllel is a Website that promotes the VR Products where reality blends seamlessly with the virtual, where imagination knows no bounds – welcome to the future of immersive technology. It's a gateway to boundless possibilities, revolutionizing how we perceive and interact with our World.
+        </div>
+      </div>
+    </div>
+  </div>
+        </li>
+        {/* card12 */}
+        <li className="card" id="card_2">
+        <div className="card__content w-[1366px] h-[567px]">
+      <div className="relative w-[1140px] h-[450px] top-[59px] left-[113px] rounded-[66px] bg-[#CA256D] flex justify-center items-center">
+      <div className=" w-[478px] h-[374px] top-[-7px] left-[-3px]">
+        <img src={image} alt="SVG Image" className="w-full h-full rounded-[40px]" />
+      </div>
+
+      <div className=" flex flex-col justify-center items-center w-[535px] h-[280px] top-[85px] left-[560px] gap-[24px] ml-5">
+        <div className="flex justify-center items-center w-full h-[46px] font-jost font-medium text-[30px] leading-[34.68px] text-white">
+          Corllel
+        </div>
+        <div className="flex justify-center items-center text-center w-full h-[210px] font-jost text-[24px] leading-[34.68px] p-4 text-white ">
+          Corllel is a Website that promotes the VR Products where reality blends seamlessly with the virtual, where imagination knows no bounds – welcome to the future of immersive technology. It's a gateway to boundless possibilities, revolutionizing how we perceive and interact with our World.
+        </div>
+      </div>
+    </div>
+  </div>
+        </li>
+      </ul>
+
+
+
+
+
+
+
+
       <div className="font-glimmer-of-light font-normal text-[24px] lg:text-[48px] leading-[1.2] lg:leading-[100px] text-center text-custom-blue"
         
         >Graphic<sub>Design</sub> </div>
-      <div className="w-[1016px] h-[116px] mt-[50px] ml-[135px] gap-0 text-center font-light text-custom leading-custom mb-paragraph">Creating visual content to communicate information or messages to a specific audience. Graphic design can be used in a wide variety of applications, such as branding, advertising, web design, print media, and more.</div>
-      <div>content7-componet</div>
+      <div className="w-[1016px] h-[58px] mt-[50px] ml-[135px] gap-0 text-center font-light text-custom leading-custom mb-paragraph">Creating visual content to communicate information or messages to a specific audience. Graphic design can be used in a wide variety of applications, such as branding, advertising, web design, print media, and more.</div>
+     
+     {/* card2 */}
+  
+     
+     <ul id="cards">
+        {/* card21 */}
+        <li className="card" id="card_1">
+            
+      <div className="w-[1366px] h-[567px]">
+      <div className="relative w-[1140px] h-[450px] top-[59px] left-[113px] rounded-[66px] bg-[#6C85C3] flex justify-center items-center">
+     
+      <div className=" w-[478px] h-[374px] top-[-7px] left-[-3px]">
+        <img src={image} alt="SVG Image" className="w-full h-full rounded-[40px]" />
+      </div>
+
+      <div className=" flex flex-col justify-center items-center w-[535px] h-[280px] top-[85px] left-[560px] gap-[24px] ml-5">
+        <div className="flex justify-center items-center w-full h-[46px] font-jost font-medium text-[30px] leading-[34.68px] text-white">
+          Corllel
+        </div>
+        <div className="flex justify-center items-center text-center w-full h-[210px] font-jost text-[24px] leading-[34.68px] p-4 text-white ">
+          Corllel is a Website that promotes the VR Products where reality blends seamlessly with the virtual, where imagination knows no bounds – welcome to the future of immersive technology. It's a gateway to boundless possibilities, revolutionizing how we perceive and interact with our World.
+        </div>
+      </div>
+    </div>
+  </div>
+        </li>
+{/* card22  */}
+        <li className="card" id="card_2">
+            
+      <div className="w-[1366px] h-[567px]">
+      <div className="relative w-[1140px] h-[450px] top-[59px] left-[113px] rounded-[66px] bg-[#CA256D] flex justify-center items-center">
+     
+      <div className=" w-[478px] h-[374px] top-[-7px] left-[-3px]">
+        <img src={image} alt="SVG Image" className="w-full h-full rounded-[40px]" />
+      </div>
+
+      <div className=" flex flex-col justify-center items-center w-[535px] h-[280px] top-[85px] left-[560px] gap-[24px] ml-5">
+        <div className="flex justify-center items-center w-full h-[46px] font-jost font-medium text-[30px] leading-[34.68px] text-white">
+          Corllel
+        </div>
+        <div className="flex justify-center items-center text-center w-full h-[210px] font-jost text-[24px] leading-[34.68px] p-4 text-white ">
+          Corllel is a Website that promotes the VR Products where reality blends seamlessly with the virtual, where imagination knows no bounds – welcome to the future of immersive technology. It's a gateway to boundless possibilities, revolutionizing how we perceive and interact with our World.
+        </div>
+      </div>
+    </div>
+  </div>
+        </li>
+     </ul>
+
+
+
+
+
+
       <div className="font-glimmer-of-light font-normal text-[24px] lg:text-[48px] leading-[1.2] lg:leading-[100px] text-center text-custom-blue"
         
         >Web & Mobile<sub>Development</sub> </div>
-      <div className="w-[1016px] h-[116px] mt-[50px] ml-[135px] gap-0 text-center font-light text-custom leading-custom mb-paragraph">Creating software or applications by writing code and programming languages. It involves a variety of tasks, including designing the system architecture, writing and testing code, debugging, and deploying the final product.</div>
-      <div>content10-component</div>
+      <div className="w-[1016px] h-[58px] mt-[50px] ml-[135px] gap-0 text-center font-light text-custom leading-custom mb-paragraph">Creating software or applications by writing code and programming languages. It involves a variety of tasks, including designing the system architecture, writing and testing code, debugging, and deploying the final product.</div>
+     
+     
+     
+     {/* card 3 */}
+     
+     <ul id="cards">
+        {/* card31 */}
+        <li className="card" id="card_1">
+        <div className="w-[1366px] h-[567px]">
+      <div className="relative w-[1140px] h-[450px] top-[59px] left-[113px] rounded-[66px] bg-[#6C85C3] flex justify-center items-center">
+      <div className=" w-[478px] h-[374px] top-[-7px] left-[-3px]">
+        <img src={image} alt="SVG Image" className="w-full h-full rounded-[40px]" />
+      </div>
+
+      <div className=" flex flex-col justify-center items-center w-[535px] h-[280px] top-[85px] left-[560px] gap-[24px] ml-5">
+        <div className="flex justify-center items-center w-full h-[46px] font-jost font-medium text-[30px] leading-[34.68px] text-white">
+          Corllel
+        </div>
+        <div className="flex justify-center items-center text-center w-full h-[210px] font-jost text-[24px] leading-[34.68px] p-4 text-white ">
+          Corllel is a Website that promotes the VR Products where reality blends seamlessly with the virtual, where imagination knows no bounds – welcome to the future of immersive technology. It's a gateway to boundless possibilities, revolutionizing how we perceive and interact with our World.
+        </div>
+      </div>
+    </div>
+  </div>
+        </li>
+        {/* card32  */}
+        <li className="card" id="card_2"><div className="w-[1366px] h-[567px]">
+      <div className="relative w-[1140px] h-[450px] top-[59px] left-[113px] rounded-[66px] bg-[#CA256D] flex justify-center items-center">
+      <div className=" w-[478px] h-[374px] top-[-7px] left-[-3px]">
+        <img src={image} alt="SVG Image" className="w-full h-full rounded-[40px]" />
+      </div>
+
+      <div className=" flex flex-col justify-center items-center w-[535px] h-[280px] top-[85px] left-[560px] gap-[24px] ml-5">
+        <div className="flex justify-center items-center w-full h-[46px] font-jost font-medium text-[30px] leading-[34.68px] text-white">
+          Corllel
+        </div>
+        <div className="flex justify-center items-center text-center w-full h-[210px] font-jost text-[24px] leading-[34.68px] p-4 text-white ">
+          Corllel is a Website that promotes the VR Products where reality blends seamlessly with the virtual, where imagination knows no bounds – welcome to the future of immersive technology. It's a gateway to boundless possibilities, revolutionizing how we perceive and interact with our World.
+        </div>
+      </div>
+    </div>
+  </div></li>
+      </ul>
     </div>
   )
 }
