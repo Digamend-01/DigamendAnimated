@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* In your index.css or another global CSS file */
+@font-face {
+    font-family: 'Glimmer of Light';
+    src: url('/glimmer\ of\ light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .font-glimmer-of-light {
+    font-family: 'Glimmer of Light', sans-serif;
+  }
+  
