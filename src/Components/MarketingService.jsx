@@ -13,32 +13,32 @@ function MarketingService() {
         };
       }, []);
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const videoContainer = document.querySelector('.video-container');
-    //         const videoContainerRect = videoContainer.getBoundingClientRect();
-    //         const nextDiv = document.querySelector('.content3');
-    //         const nextDivRect = nextDiv.getBoundingClientRect();
+    useEffect(() => {
+        const handleScroll = () => {
+            const videoContainer = document.querySelector('.video-container');
+            const videoContainerRect = videoContainer.getBoundingClientRect();
+            const nextDiv = document.querySelector('.content3');
+            const nextDivRect = nextDiv.getBoundingClientRect();
         
-    //         // Add the .zoomed class when the video container is scrolled up
-    //         if (videoContainerRect.top <= 0) {
-    //           videoContainer.classList.add('zoomed');
-    //         } else {
-    //           videoContainer.classList.remove('zoomed');
-    //         }
+            // Add the .zoomed class when the video container is scrolled up
+            if (videoContainerRect.top <= 0) {
+              videoContainer.classList.add('zoomed');
+            } else {
+              videoContainer.classList.remove('zoomed');
+            }
         
-    //         // Optional: Remove zoom when next section is scrolled into view
-    //         if (nextDivRect.top <= window.innerHeight) {
-    //           videoContainer.classList.remove('zoomed');
-    //         }
-    //       };
+            // Optional: Remove zoom when next section is scrolled into view
+            if (nextDivRect.top <= window.innerHeight) {
+              videoContainer.classList.remove('zoomed');
+            }
+          };
         
-    //       window.addEventListener('scroll', handleScroll);
+          window.addEventListener('scroll', handleScroll);
         
-    //       return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //       };
-    //     }, []);
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, []);
 
 
 
