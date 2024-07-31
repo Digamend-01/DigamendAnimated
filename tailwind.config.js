@@ -11,12 +11,17 @@ export default {
       },
       fontSize: {
         '48px': '48px',
+        'custom':'20px'
       },
       colors: {
         'custom-blue': '#143274',
       },
       lineHeight: {
         '100px': '100px',
+        'custom': '28.9px'
+      },
+      margin: {
+        'paragraph': '44px',
       },
     },
   },

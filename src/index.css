@@ -13,4 +13,43 @@
   .font-glimmer-of-light {
     font-family: 'Glimmer of Light', sans-serif;
   }
+
+  .video-container {
+    width: 1140px;
+    height: 515px;
+    top: 429.28px;
+    left: 113px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+  }
+/*   
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+   */
+  /* .zoomed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: scale(1.1);
+    border-radius: 0;
+  } */
+
+  .video-container.zoomed {
+    transform: scale(1.5); /* Adjust scaling factor as needed */
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Fix the position */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it appears on top of other elements */
+  }
   
