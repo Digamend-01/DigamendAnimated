@@ -6,6 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+      <Route path='/' element={<ProductScreen/>}></Route>
       <Route path='/ProductScreen' element={<ProductScreen/>}></Route>
       <Route path='/marketingService' element={<MarketingService/>}></Route>
       <Route path='/digitalService' element={<DigitalService/>}></Route>
