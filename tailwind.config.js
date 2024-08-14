@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'glimmer-of-light': ['"Glimmer of Light"', 'sans-serif'],
         jost: ['Jost', 'sans-serif'],
+        poppins: ['Poppins'],
       },
       fontSize: {
         '48px': '48px',
@@ -26,8 +27,13 @@ export default {
       margin: {
         'paragraph': '44px',
       },
+      screens: {
+        'xs': '320px',
+        'md':'425px'
+      },
     },
   },
+  variants: {},
   plugins: [],
 }
 
